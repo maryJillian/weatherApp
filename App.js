@@ -4,7 +4,6 @@ import {Alert} from "react-native";
 import Loading from "./src/сomponents/Loading/Loading";
 import axios from "axios";
 import Weather from "./src/сomponents/Weather/Weather";
-
 const API_KEY = '784371cc41bfb9e9ac06fcad948f117a';
 
 export default class App extends React.Component {
@@ -19,8 +18,8 @@ export default class App extends React.Component {
       temp: temp,
       condition: weather[0].main
     });
-
   }
+  
   getLocation = async () => {
     try {
       await Location.requestForegroundPermissionsAsync();
